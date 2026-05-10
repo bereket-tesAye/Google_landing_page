@@ -53,11 +53,110 @@
     height: 100px;
 }
 
-.search-bar {
+.search-wrapper {
     display: flex;
-    margin-left: 370px;
-    margin-top: 10px;
-    width: 700px;
-    height: 45px;
-    border-radius: 25px;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 584px;
+    /* Official Google width */
+    height: 44px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 0 15px;
+    transition: box-shadow 0.2s;
+}
+
+/* The "Glow" effect on hover */
+.search-bar-container:hover,
+.search-bar-container:focus-within {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+.search-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    /* Removes the blue browser outline */
+    font-size: 16px;
+    margin: 0 10px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.search-icon svg {
+    fill: #9aa0a6;
+    width: 20px;
+    height: 20px;
+}
+
+.tool-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.search-button {
+    margin-top: 25px;
+    background-color: #f8f9fa;
+    border: 1px solid #dfe1e5;
+    margin-left: 600px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.lucky-button {
+    margin-top: 25px;
+    background-color: #f8f9fa;
+    border: 1px solid #dfe1e5;
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.footer {
+    background-color: #f2f2f2;
+    color: #70757a;
+    width: 100%;
+    margin-top: 200px;
+}
+
+/* The Country Row */
+.footer .country {
+    padding: 15px 30px;
+    border-bottom: 1px solid #dadce0;
+}
+
+.footer .country a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 15px;
+}
+
+.footer .links-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #70757a;
+    font-size: 14px;
+    margin-right: 25px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
